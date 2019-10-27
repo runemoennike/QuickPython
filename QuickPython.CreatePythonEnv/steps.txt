@@ -1,0 +1,4 @@
+1. Download and extract https://www.python.org/ftp/python/3.7.5/python-3.7.5-embed-win32.zip to PythonEnv folder.
+2. Uncomment "import site" from python37._pth in PythonEnv.
+3. Run get-pip.py from PythonEnv folder.
+4. Run .\Scripts\pip install pygame from PythonEnv folder.

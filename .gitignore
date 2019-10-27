@@ -352,5 +352,5 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
-# Ignore Conda Env since it should be created locally
-QuickPython.CondaEnv
+# Ignore Python Env since it should be created locally
+PythonEnv
