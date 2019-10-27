@@ -9,7 +9,7 @@
     mc:Ignorable="d"
     Title="Untitled - QuickPython" 
     WindowState="Maximized"
-    WindowStyle="None"
+    WindowStyle="ThreeDBorderWindow"
     d:DesignHeight="400"
     d:DesignWidth="600"
 >
@@ -64,6 +64,8 @@
         <GroupBox 
             Header="Untitled" 
             Grid.Row="1"
+            Padding="0,5"
+            BorderThickness="0,1,0,0"
         >
             <sd:TextEditor 
                 Name="CodeTextEditor"
@@ -80,6 +82,8 @@
         <GroupBox
             Header="Immediate"
             Grid.Row="2"
+            BorderThickness="0,1,0,0"
+            Padding="0,5"
         >
             <sd:TextEditor 
                 Name="ImmediateTextEditor"

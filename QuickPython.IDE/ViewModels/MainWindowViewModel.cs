@@ -13,7 +13,7 @@ namespace QuickPython.IDE.ViewModels
         private TextDocument _codeDocument;
         public TextDocument CodeDocument { get => _codeDocument; set => SetField(ref _codeDocument, value); }
 
-        public ICommand StartCommand = new RelayCommand(() => StartAction());
+        public ICommand StartCommand { get; }
 
 
         public MainWindowViewModel(IPythonService pythonService)
@@ -24,11 +24,13 @@ namespace QuickPython.IDE.ViewModels
                 "print('Hello, world!')" + Environment.NewLine +
                 "input('Press Enter to continue...')"
             );
+
+            StartCommand = new RelayCommand(() => StartAction());
         }
 
-        private static void StartAction()
+        private void StartAction()
         {
-            throw new NotImplementedException();
+            _pythonService.Execute(CodeDocument.Text);
         }
     }
 }

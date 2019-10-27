@@ -2,3 +2,4 @@
 2. Uncomment "import site" from python37._pth in PythonEnv.
 3. Run get-pip.py from PythonEnv folder.
 4. Run .\Scripts\pip install pygame from PythonEnv folder.
+5. Run ./python -m pip install -e ..\QuickPython.StdLib from PythonEnv folder.
